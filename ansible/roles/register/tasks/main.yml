@@ -2,12 +2,12 @@
 # tasks file for docker-registry
 - name: Log into DockerHub
   docker_login:
-    username: polare01
-    password: 7675497a-ba5b-4ac6-b946-966201c36987
+    username: bourguiga
+    password: 9c110fe3-fbdd-4006-a481-d4b1e9e67f6e
 
 - name: Tag and push to docker hub
   docker_image:
     name: devops:latest
-    repository: polare01/cd_project
+    repository: bourguiga/cd_projet
     tag: end
     push: yes
